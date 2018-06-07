@@ -1,6 +1,6 @@
 @font-face{
     font-family:"new_word";
-    src:url("word.ttf");
+    src:url("word.TTF");
 }
 .background{
     position:absolute;
