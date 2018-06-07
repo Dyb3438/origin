@@ -1,0 +1,44 @@
+@font-face{
+    font-family:"new_word";
+    src:url("word.ttf");
+}
+.background{
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    background-image:url(questionnaire_background.jpg);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+}
+.questionArea{
+    background-image:url(book.png);
+    background-size:88vw 68vh;
+    background-repeat: no-repeat;
+    position:absolute;
+    margin-left:5vw;
+    margin-top:0vh;
+    width:88vw;
+    height:68vh;
+    display:inline-block;
+}
+
+.question{
+    font-family:"new_word";
+    font-size:10vw;
+    width:73vw;
+    height:21vh;
+    padding-left:15vw;
+    line-height:10vh;
+    margin-top:5vh;
+}
+
+.option{
+    float:right;
+    margin-top:3vh;
+    line-height:10vh;
+    font-family:"new_word";
+    font-size:6vw;
+    width:83vw;
+    height:10vh;
+    text-align:center;
+}

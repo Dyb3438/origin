@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问卷</title>
+    <link rel="stylesheet" type="text/css" href="questionnaire.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<script>
+    var number = 1;
+    function load() {
+        document.getElementById('question').innerHTML = number + ".你会选择星火教育吗？";
+    }
+</script>
+<body id="background" class="background" onload="load()">
+<div id="question1" class="questionare" style="display:block">
+    <div class="questionArea">
+        <div id='question' class="question"></div>
+        <div class="option" onclick="choose(1)" id="1_1">A.会</div>
+        <div class="option" onclick="choose(2)" id="1_4">B.不会</div>
+    </div>
+</div>
+</body>
+<script>
+    function choose(option){
+        if(option==1) {
+            $("#question1").hide();
+            number++;
+            document.getElementById('question').innerHTML = number + ".你会选择星火教育吗？";
+            $("#question1").fadeIn();
+        }else{
+            if(number>localStorage.getItem("score")){
+                localStorage.setItem("score", number);
+            }
+            window.location.href="rank.html";
+        }
+    }
+</script>
+</html>

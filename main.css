@@ -1,0 +1,49 @@
+@font-face{
+    font-family:"new_word";
+    src:url("word.ttf");
+}
+.background{
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    background-image:url(background.jpg);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+}
+.text{
+    width:100vw;
+    top:17vh;
+    position:absolute;
+}
+.title{
+    font-family:'宋体';
+    font-size:15vw;
+    color:#17dcf5;
+    text-align:center;
+}
+.button{
+    width:100vw;
+    top: 50vh;
+    position:absolute;
+
+}
+.start{
+    float:left;
+    width: 60vw;
+    height: 17vh;
+    background-image:url(a.png);
+    background-size:60vw 17vh;
+    background-repeat: no-repeat;
+   display:inline-block;
+
+}
+.rank{
+    float:right;
+    width: 50vw;
+    height:27vh;
+    background-image:url(rank.png);
+    background-size:50vw 27vh;
+    background-repeat: no-repeat;
+    display:inline-block;
+    margin-top:-26.8vh;
+}
