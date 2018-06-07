@@ -1,0 +1,64 @@
+@font-face{
+    font-family:"new_word";
+    src:url("word.ttf");
+}
+.background{
+    position:absolute;
+    margin-left:auto;
+    margin-right:auto;
+    background-image:url(questionnaire_background.jpg);
+    background-size:100vw 100vh;
+    background-repeat: no-repeat;
+}
+.title{
+    position:absolute;
+    width:100vw;
+    height:10vh;
+    font-family:"new_word";
+    font-size:20vw;
+    top:5vh;
+}
+.game{
+    color:black;
+    margin-left:10vw;
+}
+.over{
+    color:red;
+    margin-left:40vw;
+}
+.start{
+     float:left;
+     width: 60vw;
+     height: 17vh;
+     background-image:url(restart.png);
+     background-size:60vw 17vh;
+     background-repeat: no-repeat;
+     display:inline-block;
+
+ }
+.share{
+    float:right;
+    width: 50vw;
+    height:27vh;
+    background-image:url(share.png);
+    background-size:50vw 27vh;
+    background-repeat: no-repeat;
+    display:inline-block;
+    margin-top:-26.8vh;
+}
+.button{
+    width:100vw;
+    top: 50vh;
+    position:absolute;
+
+}
+.rank{
+    float:right;
+    width: 50vw;
+    height:27vh;
+    background-image:url(rank.png);
+    background-size:50vw 27vh;
+    background-repeat: no-repeat;
+    display:inline-block;
+    margin-top:-26.8vh;
+}

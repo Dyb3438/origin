@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAME OVER</title>
+    <link rel="stylesheet" type="text/css" href="gameover.css">
+</head>
+<script>
+    function load(){
+        if(localStorage.getItem("last")==1){
+            document.getElementById('share').style="display:none";
+            document.getElementById('rank').style="display:block";
+        }
+    }
+</script>
+<body id="background" class="background" onload="load()">
+<div class="title">
+    <div class="game">
+        GAME
+    </div>
+    <div class="over">
+        OVER
+    </div>
+</div>
+<div class="button">
+    <div class="start" onclick="start()"></div>
+    <div id='share' class="share" onclick="share()" style="display:block"></div>
+    <div id='rank' class="rank" onclick="rank()" style="display:none"></div>
+</div>
+</body>
+<script>
+    function start(){
+        localStorage.setItem("number",'1');
+        localStorage.setItem("last","0");
+        window.location.href="questionnaire.html";
+    }
+    function share(){
+        window.location.href = "share.html";
+    }
+    function rank(){
+        window.location.href="rank.html";
+    }
+</script>
+</html>

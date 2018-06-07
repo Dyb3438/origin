@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>share</title>
+    <link rel="stylesheet" type="text/css" href="share.css">
+</head>
+<script>
+    var second=10;
+    function setback(){
+        localStorage.setItem("last","1");
+        var text=document.getElementById('text');
+        if(second>0) {
+            text.innerHTML = "分享成功，" + second + "秒后，自动跳转继续答题";
+            second--;
+            setTimeout("setback()",1000)
+        }else{
+            window.location.href="questionnaire.html";
+        }
+    }
+</script>
+<body id="background" class="background" onload="setback()">
+<div class="title">
+    群の分享
+</div>
+<div class="share"></div>
+<div class="text" id="text"></div>
+</body>
+</html>

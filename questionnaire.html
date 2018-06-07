@@ -7,8 +7,11 @@
     <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <script>
-    var number = 1;
+    var number=1;
     function load() {
+        if(localStorage.getItem("number")){
+            number=localStorage.getItem("number");
+        }
         document.getElementById('question').innerHTML = number + ".你会选择星火教育吗？";
     }
 </script>
@@ -32,7 +35,8 @@
             if(number>localStorage.getItem("score")){
                 localStorage.setItem("score", number);
             }
-            window.location.href="rank.html";
+            localStorage.setItem("number", number);
+            window.location.href = "gameover.html";
         }
     }
 </script>

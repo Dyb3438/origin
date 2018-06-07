@@ -10,3 +10,50 @@
     background-size:100vw 100vh;
     background-repeat: no-repeat;
 }
+.title{
+    position:absolute;
+    width:100vw;
+    height:10vh;
+    font-family:"new_word";
+    font-size:20vw;
+    text-align:center;
+    top:2vh;
+    color:red;
+}
+.frame{
+    position:relative;
+    width:100vw;
+    height:90vh;
+    top:-3vh;
+    font-family:"new_word";
+    font-size:10vw;
+    background-image:url(rank_background.png);
+    background-size:100vw 90vh;
+    background-repeat: no-repeat;
+}
+.list{
+    margin-left:15vw;
+    width:70vw;
+    margin-top:2vh;
+}
+.name{
+    display:inline-block;
+}
+.score{
+    display:inline-block;
+    float:right;
+}
+.content{
+    position:absolute;
+    margin-top:15vh;
+}
+.back{
+    position:absolute;
+    margin-top:-3vh;
+    margin-left:25vw;
+    width:50vw;
+    height:10vh;
+    background-image:url(back.png);
+    background-size:50vw 10vh;
+    background-repeat: no-repeat;
+}

@@ -5,7 +5,32 @@
     <title>rank</title>
     <link rel="stylesheet" type="text/css" href="rank.css">
 </head>
-<body id="background" class="background">
-
+<script>
+function load(){
+    var score=[['张三',3],['李四',5],['王五',6],['赵六',9],['孙七',12]];
+    var myscore=(localStorage.getItem('score'))?parseInt(localStorage.getItem('score')):0;
+    var frame=document.getElementById('content');
+    var list=new Array();
+    var ok=0;
+    for(var i=(score.length-1);i>=0;i--){
+        if(myscore>=score[i][1]&ok==0){
+            frame.innerHTML+="<div class='list'><div class='name'>我</div><div class='score'>"+myscore+"</div></div>";
+            ok=1;
+            list.push(['我',myscore]);
+            list.push(score[i]);
+        }
+        frame.innerHTML+="<div class='list'><div class='name'>"+score[i][0]+"</div><div class='score'>"+score[i][1]+"</div></div>";
+    }
+}
+</script>
+<body id="background" class="background" onload="load()">
+<div class="frame" id="frame">
+    <div class="title">
+        排行榜
+    </div>
+    <div id='content' class="content">
+    </div>
+</div>
+<div class="back" onclick="window.location.href='main.html'"></div>
 </body>
 </html>
